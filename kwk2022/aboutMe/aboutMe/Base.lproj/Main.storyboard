@@ -11,21 +11,34 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="aboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="aboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bricksfijosf" translatesAutoresizingMaskIntoConstraints="NO" id="gvi-hN-bDC">
-                                <rect key="frame" x="67" y="330" width="276" height="143"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="oidfofes" translatesAutoresizingMaskIntoConstraints="NO" id="eKE-Xg-4GK">
                                 <rect key="frame" x="68" y="562" width="278" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDK-0o-4Xb">
+                                <rect key="frame" x="158" y="729" width="99" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Se7en"/>
+                                <connections>
+                                    <action selector="sevenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZY7-xJ-zmR"/>
+                                </connections>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="2002, July" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dY7-HE-APw">
-                                <rect key="frame" x="118" y="272" width="178" height="34"/>
+                                <rect key="frame" x="138" y="272" width="139" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="2006, April" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AP4-hm-kfa">
+                                <rect key="frame" x="147" y="520" width="121" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -41,18 +54,22 @@
                                     <action selector="lilyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TNL-uz-AKP"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lilychoucoch" translatesAutoresizingMaskIntoConstraints="NO" id="LN2-ai-T1b">
-                                <rect key="frame" x="67" y="81" width="280" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="2006, April" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AP4-hm-kfa">
-                                <rect key="frame" x="119" y="520" width="178" height="34"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1995, September" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9xm-uc-OS0">
+                                <rect key="frame" x="128" y="768" width="159" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bricksfijosf" translatesAutoresizingMaskIntoConstraints="NO" id="gvi-hN-bDC">
+                                <rect key="frame" x="67" y="330" width="276" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lilychoucoch" translatesAutoresizingMaskIntoConstraints="NO" id="LN2-ai-T1b">
+                                <rect key="frame" x="67" y="81" width="280" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGQ-dP-Qyi">
                                 <rect key="frame" x="158" y="481" width="99" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -62,53 +79,20 @@
                                     <action selector="brickButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6D9-qK-3Zg"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1995, September" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9xm-uc-OS0">
-                                <rect key="frame" x="118" y="768" width="178" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDK-0o-4Xb">
-                                <rect key="frame" x="158" y="729" width="99" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Se7en"/>
-                                <connections>
-                                    <action selector="sevenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZY7-xJ-zmR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gy6-sH-ZBa">
-                                <rect key="frame" x="147" y="831" width="121" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWZ-43-tBs">
+                                <rect key="frame" x="158" y="831" width="94" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="more"/>
                                 <connections>
-                                    <segue destination="7YT-u1-37g" kind="show" id="1GR-h5-VA6"/>
+                                    <segue destination="7YT-u1-37g" kind="show" id="eh8-Ye-ZI9"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ao-JE-GvW">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OWd-A8-yiz">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1000" id="rKY-GG-REk"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1000" id="Csm-eW-CGr"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="gi5-RL-Qqp"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="S9z-zt-Jed"/>
-                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                     </view>
+                    <navigationItem key="navigationItem" id="fva-Je-IFQ"/>
                     <connections>
                         <outlet property="brickDate" destination="AP4-hm-kfa" id="8ki-qg-lmI"/>
                         <outlet property="lilyDate" destination="dY7-HE-APw" id="Iwy-mU-hpP"/>
@@ -122,25 +106,25 @@
         <!--View Controller2 View Controller-->
         <scene sceneID="ret-MR-N40">
             <objects>
-                <viewController id="7YT-u1-37g" customClass="viewController2ViewController" customModule="aboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="7YT-u1-37g" customClass="viewController2ViewController" customModule="aboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kvi-ei-w1Z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfstakeshi" translatesAutoresizingMaskIntoConstraints="NO" id="cKM-Co-szO">
-                                <rect key="frame" x="72" y="552" width="271" height="150"/>
+                                <rect key="frame" x="73" y="587" width="271" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sidnyscream" translatesAutoresizingMaskIntoConstraints="NO" id="u1C-AG-ivu">
-                                <rect key="frame" x="61" y="307" width="291" height="148"/>
+                                <rect key="frame" x="57" y="334" width="301" height="156"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thedraknight" translatesAutoresizingMaskIntoConstraints="NO" id="1nh-kb-Eh4">
-                                <rect key="frame" x="60" y="44" width="294" height="161"/>
+                                <rect key="frame" x="67" y="79" width="282" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTG-5X-Bt5">
-                                <rect key="frame" x="117" y="213" width="180" height="31"/>
+                                <rect key="frame" x="118" y="248" width="180" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="The Dark Knight"/>
@@ -148,8 +132,17 @@
                                     <action selector="darkButtonTapped:" destination="7YT-u1-37g" eventType="touchUpInside" id="EZZ-DD-ir1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WN8-78-0c7">
+                                <rect key="frame" x="144" y="498" width="128" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Scream"/>
+                                <connections>
+                                    <action selector="screamButtonTapped:" destination="7YT-u1-37g" eventType="touchUpInside" id="kcW-WY-y9c"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKI-aI-mYV">
-                                <rect key="frame" x="112" y="710" width="191" height="31"/>
+                                <rect key="frame" x="113" y="745" width="191" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Chungking Express"/>
@@ -157,16 +150,8 @@
                                     <action selector="ckButtonTapped:" destination="7YT-u1-37g" eventType="touchUpInside" id="lmF-0F-Gqo"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="2008, July" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GP8-Va-3hQ">
-                                <rect key="frame" x="117" y="252" width="178" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1994, September" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7f7-og-BdE">
-                                <rect key="frame" x="118" y="749" width="178" height="34"/>
+                                <rect key="frame" x="132" y="784" width="153" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -174,20 +159,28 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1996, December" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wdY-oC-eCW">
-                                <rect key="frame" x="117" y="502" width="178" height="34"/>
+                                <rect key="frame" x="125" y="537" width="167" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WN8-78-0c7">
-                                <rect key="frame" x="143" y="463" width="128" height="31"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="2008, July" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GP8-Va-3hQ">
+                                <rect key="frame" x="144" y="287" width="128" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1z5-kU-y0Y">
+                                <rect key="frame" x="158" y="831" width="98" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Scream"/>
+                                <buttonConfiguration key="configuration" style="filled" title="back"/>
                                 <connections>
-                                    <action selector="screamButtonTapped:" destination="7YT-u1-37g" eventType="touchUpInside" id="kcW-WY-y9c"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="fPb-xh-MER"/>
                                 </connections>
                             </button>
                         </subviews>
